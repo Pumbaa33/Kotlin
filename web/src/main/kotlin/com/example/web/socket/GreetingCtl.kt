@@ -8,12 +8,11 @@ import org.springframework.stereotype.Controller
 import org.springframework.web.util.HtmlUtils
 
 @Controller
-class GreetingController {
+class GreetingCtl {
 
     @MessageMapping("/message")
     @SendTo("/topic/greetings")
     fun greeting(message: Message): Greeting {
-        Thread.sleep(1000L)
         return Greeting("Hello ${HtmlUtils.htmlEscape(message.name)}")
     }
 }

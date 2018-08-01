@@ -6,7 +6,7 @@ class Message {
 
     constructor()
 
-    constructor(name: String): this() {
+    constructor(name: String) : this() {
         this.name = name
     }
 }
