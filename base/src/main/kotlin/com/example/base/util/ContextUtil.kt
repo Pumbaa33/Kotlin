@@ -1,4 +1,4 @@
-package com.example.biz.util
+package com.example.base.util
 
 import org.springframework.context.ApplicationContext
 import org.springframework.context.ApplicationContextAware
